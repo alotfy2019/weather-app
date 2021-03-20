@@ -11,8 +11,9 @@
     "sass": "^1.32.8"
   },
   "scripts": {
-    "sass": "sass --watch main.scss main.css",
-    "all": "npm-run-all live-server sass --parallel"
+    "sass": "sass --watch main.scss style.css",
+    "live-server": "live-server",
+    "all": "npm-run-all --parallel live-server sass"
   },
   "author": "",
   "license": "ISC"

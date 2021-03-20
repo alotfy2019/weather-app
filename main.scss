@@ -1,34 +1,32 @@
 *,
 *::before,
 *::after {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 html {
-    font-size: 62.5%;
+  font-size: 62.5%;
 }
 
-main {
-    justify-content: space-between;
-    background: url(/images/bg-1-big.jpg), rgba($color: #000000, $alpha: 0.3);
-    background-position: center;
-    background-size: cover;
-    height: 100vh;
-
-    & img {
-        width: 3rem;
-        fill: white;
-    }
-}
-
-.header--container {
+main .main--containerleft {
+  background: url(/images/md-bg.jpg), rgba($color: white, $alpha: 1);
+  background-position: center;
+  background-size: cover;
+  filter: grayscale(100%);
+  height: 100vh;
+  width: 75%;
+  &__header {
     display: flex;
     justify-content: space-between;
     padding: 3rem 3rem;
-
-    &__heading {
-        color: white;
-    }
+    color: white;
+  }
+  &__btn span {
+    width: 5rem;
+    height: 0.5rem;
+    background: white;
+    margin-top: 2rem;
+  }
 }

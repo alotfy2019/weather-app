@@ -1,37 +1,39 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="main.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
     <title>Weather App</title>
-</head>
+  </head>
 
-<body>
+  <body>
     <main>
-        <header class="header--container">
-            <h1 class="header--container__heading">Instant Weather</h1>
-
+      <div class="main--containerleft">
+        <header class="main--containerleft__header">
+          <h1 class="main--containerleft__heading">Instant Weather ®</h1>
+          <div class="main--containerleft__btn">
+            <span class="span1"></span>
+            <span class="span2"></span>
+            <span class="span3"></span>
+          </div>
         </header>
-        <section class="main--temp">
-            <h2 class="main--temp__temp">14°</h2>
-            <p class="main--temp__explain">Today is so cloudy</p>
-            <p class="main--temp__advice"></p>
+
+        <section class="main--containerleft__temp">
+          <h2 class="main--containerleft__temp">14°</h2>
+          <p class="main--containerleft__explain">Today is so cloudy</p>
+          <p class="main--containerleft__advice"></p>
         </section>
-        <footer class="footer--container">
-            <div class="footer--container__date"></div>
-            <div class="footer--container__place"></div>
+
+        <footer class="main--containerleft__footer">
+          <div class="main--containerleft__date"></div>
+          <div class="main--containerleft__place"></div>
         </footer>
+      </div>
+      <div class="main--containerright"></div>
     </main>
 
-
-
-
-
-
     <script src="app.js"></script>
-</body>
-
+  </body>
 </html>
