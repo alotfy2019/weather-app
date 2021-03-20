@@ -1,0 +1,34 @@
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+main {
+    justify-content: space-between;
+    background: url(/images/bg-1-big.jpg), rgba($color: #000000, $alpha: 0.3);
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+
+    & img {
+        width: 3rem;
+        fill: white;
+    }
+}
+
+.header--container {
+    display: flex;
+    justify-content: space-between;
+    padding: 3rem 3rem;
+
+    &__heading {
+        color: white;
+    }
+}
